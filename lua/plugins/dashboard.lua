@@ -29,7 +29,8 @@ return {
 						icon = " ",
 				  		--group = "Number",
 				  		action = function()
-							require('telescope.builtin').find_files({ cwd = "$HOME/.config/" })
+							vim.cmd("cd $HOME/.config")
+							require('telescope.builtin').find_files({cwd = "$HOME/.config/"})
 						end,
 				  		key = "d",
 					},
@@ -38,6 +39,6 @@ return {
 		})
 
 		
-		vim.keymap.set("n", "<Leader>d", ":Dashboard<CR>", { desc = "Open Dashboard" })
+		vim.keymap.set("n", "<Leader>d", ":Dashboard<CR>", { desc = "Open Dashboard", silent = true})
   	end,
 } 

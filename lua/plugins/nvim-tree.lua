@@ -21,6 +21,10 @@ return {
 			view = {
 				width = 25,
 			},
+			update_focused_file = {
+				enable = true,
+				update_cwd = true,
+			},
 		})
 
 		vim.api.nvim_set_keymap("n", "<Leader>e", ":NvimTreeOpen<CR>", { noremap = true, silent = true })
