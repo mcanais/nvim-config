@@ -9,4 +9,5 @@ require("lazy").setup({
 	require("plugins.cmp"),        -- Auto completion
 	require("plugins.statusbar"),  -- Status bar diplay
 	require("plugins.dashboard"),  -- Startup dashboard
+	require("plugins.multicursor"),-- Multicursor
 })
