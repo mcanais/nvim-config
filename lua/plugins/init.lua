@@ -10,4 +10,5 @@ require("lazy").setup({
 	require("plugins.statusbar"),  -- Status bar diplay
 	require("plugins.dashboard"),  -- Startup dashboard
 	require("plugins.multicursor"),-- Multicursor
+	require("plugins.indent-blankline"),
 })
