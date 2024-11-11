@@ -2,7 +2,9 @@ return {
     "kylechui/nvim-surround",
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
+        surround = require("nvim-surround")
+
+        surround.setup({
             keymaps = {
                 insert = nil,
                 insert_line = nil,
@@ -19,32 +21,38 @@ return {
 
             surrounds = {
                 ["("] = {
-                    add = {"(", ")"},
-                    find = function()
-                        return M.get_selection({ motion = "a(" })
-                    end,
+                    add = { "(", ")" },
                     delete = "^(.)().-(.)()$",
                 },
                 [")"] = {
                     add = {"( ", " )"},
-                    find = function()
-                        return M.get_selection({ motion = "a)" })
-                    end,
                     delete = "^(. ?)().-( ?.)()$",
                 },
 
                 ["{"] = {
                     add = { "{", "}" },
-                    find = function()
-                        return M.get_selection({ motion = "a}" })
-                    end,
                     delete = "^(.)().-(.)()$",
                 },
                 ["}"] = {
                     add = { "{ ", " }" },
-                    find = function()
-                        return M.get_selection({ motion = "a{" })
-                    end,
+                    delete = "^(. ?)().-( ?.)()$",
+                },
+
+                ["<"] = {
+                    add = { "<", ">" },
+                    delete = "^(.)().-(.)()$",
+                },
+                [">"] = {
+                    add = { "< ", " >" },
+                    delete = "^(. ?)().-( ?.)()$",
+                },
+
+                ["["] = {
+                    add = { "[", "]" },
+                    delete = "^(.)().-(.)()$",
+                },
+                ["]"] = {
+                    add = { "[ ", " ]" },
                     delete = "^(. ?)().-( ?.)()$",
                 },
             },
