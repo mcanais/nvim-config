@@ -11,4 +11,5 @@ require("lazy").setup({
 	require("plugins.dashboard"),  -- Startup dashboard
 	require("plugins.multicursor"),-- Multicursor
 	require("plugins.indent-blankline"),
+	require("plugins.surround"),
 })
