@@ -27,7 +27,7 @@ return {
 			},
 		})
 
-		vim.api.nvim_set_keymap("n", "<Leader>eo", ":NvimTreeOpen<CR>", { noremap = true, silent = true })
-		vim.api.nvim_set_keymap("n", "<Leader>ew", ":NvimTreeClose<CR>", { noremap = true, silent = true })
+		vim.keymap.set("n", "<Leader>eo", ":NvimTreeOpen<CR>", { noremap = true, silent = true })
+		vim.keymap.set("n", "<Leader>ew", ":NvimTreeClose<CR>", { noremap = true, silent = true })
 	end
 }

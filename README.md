@@ -10,9 +10,9 @@ Shortcuts for plugin functionality and general use.
 | Shortcut          | Mode          | Description                                                                |
 |-------------------|---------------|----------------------------------------------------------------------------|
 | `<C-Bs>`          | Insert        | Delete word backwards                                                      |
-| `<Leader>f`       | Normal        | Fuzzy file search                                                          |
-| `<Leader>h`       | Normal        | Fuzzy file search including hidden files                                   |
-| `<Leader>g`       | Normal        | Fuzzy string search                                                        |
+| `<Leader>ff`      | Normal        | Fuzzy file search                                                          |
+| `<Leader>fh`      | Normal        | Fuzzy file search including hidden files                                   |
+| `<Leader>fg`      | Normal        | Fuzzy string search                                                        |
 | `<Leader>eo`      | Normal        | Open nvim-tree                                                             |
 | `<Leader>ew`      | Normal        | Close nvim-tree                                                            |
 | `<Leader>d`       | Normal        | Go to dashboard                                                            |
@@ -31,18 +31,24 @@ Shortcuts for plugin functionality and general use.
 | `<Leader>mN`      | Normal/Visual | Add cursor to the previous string that matches the selection               |
 | `<Leader>ms`      | Normal/Visual | Skip cursor to the next string that matches the selection                  |
 | `<Leader>mS`      | Normal/Visual | Skip cursor to the previous string that matches the selection              |
-| `<Leader>x`       | Normal/Visual | Remove selected cursor                                                     |
+| `<Leader>ma`      | Normal/Visual | Add a cursor to all matches of the selection in the file                   |
+| `m`               | Visual        | Add a cursor to all matches of given string in the selection               |
+| `<Leader>mx`      | Normal/Visual | Remove selected cursor                                                     |
 | `<Leader>mr`      | Normal        | Restore cursors                                                            |
+| `<Leader>mt`      | Visual        | Rotate contents of the lines of the selection                              |
+| `<Leader>mT`      | Visual        | Rotate contents of the lines of the selection in opposite direction        |
 | `<Leader>a`       | Normal        | Align cursors columns                                                      |
 | `S`               | Visual        | Split selection by identifier                                              |
-| `<Leader>c`       | Visual        | Add cursor to each line of the selection in the same column as main cursor |
-| `<Leader>i`       | Visual        | Add cursor to each line of selection and go into insert mode               |
 | `<Leader>a`       | Visual        | Add cursor to each line of selection and go into add mode                  |
-| `<Leader>t`       | Visual        | Rotate contents of the lines of the selection                              |
-| `<Leader>T`       | Visual        | Rotate contents of the lines of the selection in opposite direction        |
+| `<Leader>i`       | Visual        | Add cursor to each line of selection and go into insert mode               |
 | `<A-Up>`          | Normal        | Move line up                                                               |
 | `<A-Down>`        | Normal        | Move line down                                                             |
 | `<A-Up>`          | Visual        | Move selection up                                                          |
 | `<A-Down>`        | Visual        | Move selection down                                                        |
 | `<A-Right>`       | Visual        | Move selection to the right                                                |
 | `<A-Left>`        | Visual        | Move selection to the left                                                 |
+| `<Leader>tn`      | Normal        | New tab                                                                    |
+| `<Leader>tw`      | Normal        | Close tab                                                                  |
+| `<Leader>ti`      | Normal        | Move to tab in given index                                                 |
+| `<Leader><Right>` | Normal        | Move to next tab                                                           |
+| `<Leader><Left>`  | Normal        | Move to previous tab                                                       |

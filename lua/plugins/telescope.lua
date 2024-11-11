@@ -6,16 +6,16 @@ return {
     	
 		require("telescope").setup({})
 
-		vim.keymap.set("n", "<Leader>f", builtin.find_files, { desc = "Find Files", noremap = true, silent = true })
+		vim.keymap.set("n", "<Leader>ff", builtin.find_files, { desc = "Find Files", noremap = true, silent = true })
 
-		vim.keymap.set("n", "<Leader>h",
+		vim.keymap.set("n", "<Leader>fh",
 			function()
 				builtin.find_files({hidden = true})
 			end,
 			{desc = "Find Files (Hidden included)", noremap = true, silent = true }
 		)
 
-		vim.keymap.set("n", "<Leader>g",
+		vim.keymap.set("n", "<Leader>fg",
 			function()
 				s = vim.fn.input("Find string: ")
 				if (s == "") then 

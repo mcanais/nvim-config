@@ -27,7 +27,7 @@ return {
         vim.keymap.set("v", "m", mc.matchCursors) -- Match all occurences of given expression in a visual selection
 
         -- Delete the selected cursor
-        vim.keymap.set({"n", "v"}, "<Leader>x", mc.deleteCursor)
+        vim.keymap.set({"n", "v"}, "<Leader>mx", mc.deleteCursor)
 
         -- Restore Cursors
         vim.keymap.set("n", "<Leader>mr", mc.restoreCursors)
@@ -39,13 +39,12 @@ return {
         vim.keymap.set("v", "S", mc.splitCursors)
 
         -- Append/insert for each line of visual selections
-		vim.keymap.set("v", "<Leader>c", mc.addCursorOperator)
         vim.keymap.set("v", "<Leader>i", mc.insertVisual)
         vim.keymap.set("v", "<Leader>a", mc.appendVisual)
 
         -- Rotate visual selection contents
-        vim.keymap.set("v", "<Leader>t", function() mc.transposeCursors(1) end)
-        vim.keymap.set("v", "<Leader>T", function() mc.transposeCursors(-1) end)
+        vim.keymap.set("v", "<Leader>mt", function() mc.transposeCursors(1) end)
+        vim.keymap.set("v", "<Leader>mT", function() mc.transposeCursors(-1) end)
 
 
 		vim.keymap.set("n", "<esc>", function()
