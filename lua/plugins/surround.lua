@@ -8,8 +8,8 @@ return {
             keymaps = {
                 insert = nil,
                 insert_line = nil,
-                normal = "ys",
-                normal_cur = "yss",
+                normal = "<Leader>s",
+                normal_cur = "<Leader>ss",
                 normal_line = nil,
                 normal_cur_line = nil,
                 visual = "<Leader>s",

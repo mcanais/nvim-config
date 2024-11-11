@@ -18,7 +18,10 @@ return {
 		vim.keymap.set("n", "<Leader>g",
 			function()
 				s = vim.fn.input("Find string: ")
-				if (s == "") then return end
+				if (s == "") then 
+					vim.cmd("echo ''")
+					return 
+				end
 				builtin.grep_string({search = s})	
 			end,
 			{ desc = "Find String in files", silent = true, noremap = true}

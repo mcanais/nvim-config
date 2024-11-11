@@ -24,7 +24,7 @@ return {
         vim.keymap.set({"n", "v"}, "<Leader>mN", function() mc.matchAddCursor(-1) end)
         vim.keymap.set({"n", "v"}, "<Leader>mS", function() mc.matchSkipCursor(-1) end)
         vim.keymap.set({"n", "v"}, "<Leader>ma", mc.matchAllAddCursors) -- Add all matches in the document
-        vim.keymap.set("v", "m", mc.matchCursors)
+        vim.keymap.set("v", "m", mc.matchCursors) -- Match all occurences of given expression in a visual selection
 
         -- Delete the selected cursor
         vim.keymap.set({"n", "v"}, "<Leader>x", mc.deleteCursor)
