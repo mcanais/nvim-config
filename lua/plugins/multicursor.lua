@@ -12,11 +12,11 @@ return {
         vim.keymap.set({"n", "v"}, "<C-S-Down>", function() mc.lineSkipCursor(1) end)
 
 		-- Add/remove cursors with mouse left click
-        vim.keymap.set("n", "<c-leftmouse>", mc.handleMouse)
+        vim.keymap.set("n", "<C-leftmouse>", mc.handleMouse)
 
         -- Move to next/previous cursor
-        vim.keymap.set({"n", "v"}, "<C-Left>", mc.nextCursor)
-        vim.keymap.set({"n", "v"}, "<C-Right>", mc.prevCursor)
+        vim.keymap.set({"n", "v"}, "<C-Right>", mc.nextCursor)
+        vim.keymap.set({"n", "v"}, "<C-Left>", mc.prevCursor)
 
         -- Adding/skipping a new cursor by matching word/selection
         vim.keymap.set({"n", "v"}, "<Leader>mn", function() mc.matchAddCursor(1) end)
@@ -57,10 +57,6 @@ return {
                 -- Default <esc> handler.
             end
         end)
-
-        -- Jumplist support
-        vim.keymap.set({"v", "n"}, "<c-i>", mc.jumpForward)
-        vim.keymap.set({"v", "n"}, "<c-o>", mc.jumpBackward)
 
         -- Customize how cursors look
         local hl = vim.api.nvim_set_hl
