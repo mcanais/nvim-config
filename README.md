@@ -40,3 +40,9 @@ Shortcuts for plugin functionality and general use.
 | `<Leader>a`       | Visual        | Add cursor to each line of selection and go into add mode                  |
 | `<Leader>t`       | Visual        | Rotate contents of the lines of the selection                              |
 | `<Leader>T`       | Visual        | Rotate contents of the lines of the selection in opposite direction        |
+| `<A-Up>`          | Normal        | Move line up                                                               |
+| `<A-Down>`        | Normal        | Move line down                                                             |
+| `<A-Up>`          | Visual        | Move selection up                                                          |
+| `<A-Down>`        | Visual        | Move selection down                                                        |
+| `<A-Right>`       | Visual        | Move selection to the right                                                |
+| `<A-Left>`        | Visual        | Move selection to the left                                                 |

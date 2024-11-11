@@ -12,4 +12,5 @@ require("lazy").setup({
 	require("plugins.multicursor"),      -- Multicursor
 	require("plugins.indent-blankline"), -- Visual indentation delimiter
 	require("plugins.surround"),         -- Surround selection () "" {}
+	require("plugins.move"),             -- Move selection
 })
