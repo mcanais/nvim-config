@@ -7,10 +7,9 @@ local function move_tab_to_index()
 	if position ~= '$' then
 		position = tonumber(position)
 		if not position or position < 0 or position > vim.fn.tabpagenr('$') then return end
-		if position == 1 then position = 0 end
 	end
 	
-	vim.cmd("tabmove " .. position)
+	vim.cmd("tabnext " .. position)
 end
 
 vim.keymap.set("n", "<Leader>tn", ":tabnew<CR>", { noremap = true, silent = true })
