@@ -4,7 +4,8 @@ This is my neovim configuration. The plugin management is done by LazyVim.
 
 # Custom Shortcuts
 
-Shortcuts for plugin functionality and general use. <Leader> is set to Space.
+Shortcuts for plugin functionality and general use.
+`<Leader>` is set to Space.
 
 | Shortcut          | Mode          | Description                                                                |
 |-------------------|---------------|----------------------------------------------------------------------------|
