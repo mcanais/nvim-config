@@ -5,11 +5,11 @@ local function tree_on_attach(bufnr)
     	return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
 	end
 
-  	-- Default mappings
-	api.config.mappings.default_on_attach(bufnr)
+	-- Default mappings
+	api.config.mappings.default_on_attach(bufnr)	
 
-  	-- Custom mappings
-  	vim.keymap.set("n", "t", api.tree.change_root_to_node, opts("CD"))
+	-- Custom mappings
+	vim.keymap.set("n", "t", api.tree.change_root_to_node, opts("CD"))
 end
 
 return {
