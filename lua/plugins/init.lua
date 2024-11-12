@@ -13,4 +13,5 @@ require("lazy").setup({
 	require("plugins.indent-blankline"), -- Visual indentation delimiter
 	require("plugins.surround"),         -- Surround selection () "" {}
 	require("plugins.move"),             -- Move selection
+	require("plugins.ufo"),              -- Code Folding
 })
