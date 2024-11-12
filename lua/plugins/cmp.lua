@@ -24,7 +24,7 @@ return {
 				["<Tab>"] = cmp.mapping.select_next_item(),        -- Next item
 				["<C-Space>"] = cmp.mapping.complete(),            -- Trigger completion
 				["<CR>"] = cmp.mapping.confirm({ select = true }), -- Confirm selected item
-				["<Esc>"] = cmp.mapping.abort(),                   -- Abort completion
+				["<C-e>"] = cmp.mapping.abort(),                   -- Abort completion
 			},
 
 			sources = {
