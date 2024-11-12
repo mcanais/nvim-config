@@ -15,6 +15,8 @@ return {
 			{desc = "Find Files (Hidden included)", noremap = true, silent = true }
 		)
 
+		vim.keymap.set("n", "<Leader>fb", builtin.buffers, {desc = "Find Buffers", noremap = true, silent = true })
+
 		vim.keymap.set("n", "<Leader>fg",
 			function()
 				s = vim.fn.input("Find string: ")
