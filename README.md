@@ -14,6 +14,8 @@ Shortcuts for plugin functionality and general use.
 | `<Leader>fh`       | Normal        | Fuzzy file search including hidden files                                   |
 | `<Leader>fg`       | Normal        | Fuzzy string search                                                        |
 | `<Leader>fb`       | Normal        | Fuzzy buffer search                                                        |
+| `<Leader>fc`       | Normal        | Fuzzy colorscheme search                                                   |
+| `<Leader>fd`       | Normal        | Fuzzy directory search                                                     |
 | `<Leader>eo`       | Normal        | Open nvim-tree                                                             |
 | `<Leader>ew`       | Normal        | Close nvim-tree                                                            |
 | `<Leader>d`        | Normal        | Go to dashboard                                                            |

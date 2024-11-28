@@ -1,6 +1,7 @@
 return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
+	event = "UIEnter",
 	config = function()
 		local builtin = require("telescope.builtin")
     	
@@ -16,6 +17,19 @@ return {
 		)
 
 		vim.keymap.set("n", "<Leader>fb", builtin.buffers, {desc = "Find Buffers", noremap = true, silent = true })
+
+		vim.keymap.set("n", "<Leader>fc", builtin.colorscheme, {desc = "Find Buffers", noremap = true, silent = true })
+		
+		vim.keymap.set("n", "<Leader>fd", 
+			function()
+				builtin.find_files({
+					find_command = {"fd", "-t", "d"},
+					cwd = "..",
+					prompt_title = "Find Directories",
+				})
+			end,
+			{desc = "Find Directories", noremap = true, silent = true }
+		)
 
 		vim.keymap.set("n", "<Leader>fg",
 			function()

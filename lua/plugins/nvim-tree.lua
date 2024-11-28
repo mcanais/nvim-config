@@ -15,6 +15,7 @@ end
 return {
 	"nvim-tree/nvim-tree.lua",
 	requires = { "nvim-tree/nvim-web-devicons" },
+	event = "UIEnter",
 	config = function()
 		require("nvim-tree").setup({
 			on_attach = tree_on_attach,
