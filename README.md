@@ -10,6 +10,10 @@ Shortcuts for plugin functionality and general use.
 | Shortcut           | Mode          | Description                                                                |
 |--------------------|---------------|----------------------------------------------------------------------------|
 | `<C-Bs>`           | Insert        | Delete word backwards                                                      |
+| `<Leader>Esc`      | Insert        | Remove highlight selection                                                      |
+| `ç`                | Normal/Visual/Options | Move to end                                                      |
+| `<Leader>p`        | Normal        | Move to previous buffer                                                      |
+| `º`                | Normal        | Find                                                      |
 | `<Leader>ff`       | Normal        | Fuzzy file search                                                          |
 | `<Leader>fh`       | Normal        | Fuzzy file search including hidden files                                   |
 | `<Leader>fg`       | Normal        | Fuzzy string search                                                        |
