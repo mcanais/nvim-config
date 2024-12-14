@@ -11,7 +11,7 @@ return {
 
 		vim.keymap.set("n", "<Leader>fh",
 			function()
-				builtin.find_files({hidden = true})
+				builtin.find_files({hidden = true, no_ignore=true})
 			end,
 			{desc = "Find Files (Hidden included)", noremap = true, silent = true }
 		)
@@ -19,6 +19,8 @@ return {
 		vim.keymap.set("n", "<Leader>fb", builtin.buffers, {desc = "Find Buffers", noremap = true, silent = true })
 
 		vim.keymap.set("n", "<Leader>fc", builtin.colorscheme, {desc = "Find Buffers", noremap = true, silent = true })
+
+		vim.keymap.set("n", "<Leader>ft", builtin.treesitter, {desc = "Find Buffers", noremap = true, silent = true })
 		
 		vim.keymap.set("n", "<Leader>fd", 
 			function()
