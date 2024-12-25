@@ -21,7 +21,7 @@ return {
 						desc = "Files",
 						icon = "󰧟 ",
 						--group = "Label",
-						action = "Telescope find_files",
+						action = "FzfLua files",
 						key = "f",
 					},
 					{
@@ -30,7 +30,7 @@ return {
 						--group = "Number",
 						action = function()
 							vim.cmd("cd $HOME/.config")
-							require('telescope.builtin').find_files({cwd = "$HOME/.config/"})
+							require("fzf-lua").files({cwd = "~/.config"})
 						end,
 						key = "d",
 					},

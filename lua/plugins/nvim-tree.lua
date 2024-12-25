@@ -29,7 +29,7 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<Leader>eo", ":NvimTreeOpen<CR>", { noremap = true, silent = true })
-		vim.keymap.set("n", "<Leader>ew", ":NvimTreeClose<CR>", { noremap = true, silent = true })
+		vim.keymap.set("n", "<Leader>e", ":NvimTreeOpen<CR>", { noremap = true, silent = true })
+		vim.keymap.set("n", "<Leader>w", ":NvimTreeClose<CR>", { noremap = true, silent = true })
 	end
 }
