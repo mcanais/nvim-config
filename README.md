@@ -10,16 +10,15 @@ Shortcuts for plugin functionality and general use.
 | Shortcut           | Mode          | Description                                                                |
 |--------------------|---------------|----------------------------------------------------------------------------|
 | `<C-Bs>`           | Insert        | Delete word backwards                                                      |
-| `<Leader>Esc`      | Insert        | Remove highlight selection                                                      |
-| `ç`                | Normal/Visual/Options | Move to end                                                      |
-| `<Leader>p`        | Normal        | Move to previous buffer                                                      |
-| `º`                | Normal        | Find                                                      |
+| `<Leader>Esc`      | Insert        | Remove highlight selection                                                 |
+| `ç`                | Normal/Visual/Options | Move to end                                                        |
+| `<Leader>p`        | Normal        | Move to previous buffer                                                    |
+| `º`                | Normal        | Find                                                                       |
 | `<Leader>ff`       | Normal        | Fuzzy file search                                                          |
-| `<Leader>fh`       | Normal        | Fuzzy file search including hidden files                                   |
 | `<Leader>fg`       | Normal        | Fuzzy string search                                                        |
 | `<Leader>fb`       | Normal        | Fuzzy buffer search                                                        |
 | `<Leader>fc`       | Normal        | Fuzzy colorscheme search                                                   |
-| `<Leader>fd`       | Normal        | Fuzzy directory search                                                     |
+| `<Leader>fo`       | Normal        | Fuzzy todo marks search                                                    |
 | `<Leader>eo`       | Normal        | Open nvim-tree                                                             |
 | `<Leader>ew`       | Normal        | Close nvim-tree                                                            |
 | `<Leader>d`        | Normal        | Go to dashboard                                                            |
@@ -42,8 +41,8 @@ Shortcuts for plugin functionality and general use.
 | `m`                | Visual        | Add a cursor to all matches of given string in the selection               |
 | `<Leader>mx`       | Normal/Visual | Remove selected cursor                                                     |
 | `<Leader>mr`       | Normal        | Restore cursors                                                            |
-| `<Leader>mt`       | Visual        | Rotate contents of the lines of the selection                              |
-| `<Leader>mT`       | Visual        | Rotate contents of the lines of the selection in opposite direction        |
+| `<Leader>t`        | Visual        | Rotate contents of the lines of the selection                              |
+| `<Leader>T`        | Visual        | Rotate contents of the lines of the selection in opposite direction        |
 | `<Leader>a`        | Normal        | Align cursors columns                                                      |
 | `S`                | Visual        | Split selection by identifier                                              |
 | `<Leader>a`        | Visual        | Add cursor to each line of selection and go into add mode                  |
@@ -54,11 +53,6 @@ Shortcuts for plugin functionality and general use.
 | `<A-Down>`         | Visual        | Move selection down                                                        |
 | `<A-Right>`        | Visual        | Move selection to the right                                                |
 | `<A-Left>`         | Visual        | Move selection to the left                                                 |
-| `<Leader>tn`       | Normal        | New tab                                                                    |
-| `<Leader>tw`       | Normal        | Close tab                                                                  |
-| `<Leader>ti`       | Normal        | Move to tab in given index                                                 |
-| `<Leader>t<Right>` | Normal        | Move to next tab                                                           |
-| `<Leader>t<Left>`  | Normal        | Move to previous tab                                                       |
 | `<Leader><Right>`  | Normal        | Move to window on the right                                                |
 | `<Leader><Left>`   | Normal        | Move to window on the left                                                 |
 | `<Leader><Up>`     | Normal        | Move to window above                                                       |

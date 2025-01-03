@@ -43,5 +43,8 @@ return {
 			end,
 			{ desc = "Find Colorschemes", noremap = true, silent = true }
 		)
+
+		-- Todo marks
+		vim.keymap.set("n", "<Leader>fo", ":TodoFzfLua<CR>", { desc = "Find Todo", noremap = true, silent = true })
 	end
 }
