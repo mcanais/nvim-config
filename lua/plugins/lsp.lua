@@ -13,7 +13,7 @@ return {
 		dependencies = {"mason.nvim"},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = {"clangd", "rust_analyzer"},
+				ensure_installed = {"rust_analyzer"},
         		automatic_installation = true,
 			})
 

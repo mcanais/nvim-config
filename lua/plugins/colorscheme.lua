@@ -7,4 +7,8 @@ return {
 	},
 	"sho-87/kanagawa-paper.nvim",
 	"folke/tokyonight.nvim",
+	{
+		"catppuccin/nvim",
+		name = "catpuccin",
+	}
 }
