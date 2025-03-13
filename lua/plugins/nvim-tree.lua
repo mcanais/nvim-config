@@ -27,6 +27,10 @@ return {
 				enable = true,
 				update_cwd = false,
 			},
+
+			git = {
+				ignore = false,
+			},
 		})
 
 		vim.keymap.set("n", "<Leader>e", ":NvimTreeOpen<CR>", { noremap = true, silent = true })
