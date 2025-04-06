@@ -24,3 +24,10 @@ vim.keymap.set("n", "<Leader><Left>" , "<C-w>h", default_options)
 vim.keymap.set("n", "<Leader><Down>" , "<C-w>j", default_options)
 vim.keymap.set("n", "<Leader><Up>"   , "<C-w>k", default_options)
 vim.keymap.set("n", "<Leader><Right>", "<C-w>l", default_options)
+
+
+-- Tabs
+vim.keymap.set("n", "<Tab>"   , ">>", default_options)
+vim.keymap.set("n", "<S-Tab>" , "<<", default_options)
+vim.keymap.set("v", "<Tab>"   , ">",  default_options)
+vim.keymap.set("v", "<S-Tab>" , "<",  default_options)
