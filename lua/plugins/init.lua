@@ -15,4 +15,5 @@ require("lazy").setup({
 	require("plugins.move"),             -- Move selection
 	require("plugins.ufo"),              -- Code Folding
 	require("plugins.todo-comments"),    -- Hightlight keywords (TODO, FIX)
+  require("plugins.gitsigns"),         -- Sign column for git changes
 })
