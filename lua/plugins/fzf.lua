@@ -13,11 +13,19 @@ return {
 		)
 
 		-- Live grep
-		vim.keymap.set("n", "<Leader>fg", 
+		vim.keymap.set("n", "<Leader>fe", 
 			function()
 				fzf.live_grep()
 			end,
 			{ desc = "Live grep", noremap = true, silent = true }
+		)
+
+		-- Git status
+		vim.keymap.set("n", "<Leader>fg", 
+			function()
+				fzf.git_status()
+			end,
+			{ desc = "git status", noremap = true, silent = true }
 		)
 		
 		-- Buffers

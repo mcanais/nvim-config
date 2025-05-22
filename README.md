@@ -15,7 +15,8 @@ Shortcuts for plugin functionality and general use.
 | `<Leader>p`        | Normal        | Move to previous buffer                                                    |
 | `º`                | Normal        | Find                                                                       |
 | `<Leader>ff`       | Normal        | Fuzzy file search                                                          |
-| `<Leader>fg`       | Normal        | Fuzzy string search                                                        |
+| `<Leader>fe`       | Normal        | Fuzzy string search                                                        |
+| `<Leader>fg`       | Normal        | Show git status                                                            |
 | `<Leader>fb`       | Normal        | Fuzzy buffer search                                                        |
 | `<Leader>fc`       | Normal        | Fuzzy colorscheme search                                                   |
 | `<Leader>fo`       | Normal        | Fuzzy todo marks search                                                    |
