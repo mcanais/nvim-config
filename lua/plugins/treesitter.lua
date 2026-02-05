@@ -1,15 +1,17 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	event = "UIEnter",
+	lazy = false,
+	build = ":TSUpdate",
 	config = function()
-		require("nvim-treesitter.configs").setup({
-			ensure_installed = {"c","cpp","rust","lua","vim","vimdoc","query"},
+		treesitter = require("nvim-treesitter")
 
-			auto_install = true,
+		treesitter.install({"c", "odin", "lua", "java"})
 
-			highlight = {
-				enable = true
-			}
+		vim.api.nvim_create_autocmd({"FileType"}, {
+			pattern = "*",
+			callback = function(event)
+				pcall(function() vim.treesitter.start(event.buf) end)
+			end,
 		})
-	end
+	end,
 }

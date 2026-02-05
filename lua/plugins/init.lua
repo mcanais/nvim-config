@@ -1,6 +1,7 @@
 -- PLUGINS
 require("lazy").setup({
 	require("plugins.treesitter"),       -- Better syntax highlighting
+	require("plugins.treesitter-context"),
 	require("plugins.lsp"),              -- Language Server Protocol
 	require("plugins.fzf"),              -- Fuzzy Finder
 	require("plugins.autopairs"),        -- Auto pairs () {} []
@@ -15,5 +16,5 @@ require("lazy").setup({
 	require("plugins.move"),             -- Move selection
 	require("plugins.ufo"),              -- Code Folding
 	require("plugins.todo-comments"),    -- Hightlight keywords (TODO, FIX)
-  require("plugins.gitsigns"),         -- Sign column for git changes
+	require("plugins.gitsigns"),         -- Sign column for git changes
 })
