@@ -33,14 +33,10 @@ return {
         vim.keymap.set("n", "<Leader>mr", mc.restoreCursors)
 
         -- Align cursor columns
-        vim.keymap.set("n", "<Leader>a", mc.alignCursors)
+        vim.keymap.set("n", "<Leader>ma", mc.alignCursors)
 
         -- Split visual selection by identifier
         vim.keymap.set("v", "S", mc.splitCursors)
-
-        -- Append/insert for each line of visual selections
-        vim.keymap.set("v", "<Leader>i", mc.insertVisual)
-        vim.keymap.set("v", "<Leader>a", mc.appendVisual)
 
         -- Rotate visual selection contents
         vim.keymap.set("v", "<Leader>t", function() mc.transposeCursors(1) end)

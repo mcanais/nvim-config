@@ -31,3 +31,6 @@ vim.keymap.set("n", "<Tab>"   , ">>", default_options)
 vim.keymap.set("n", "<S-Tab>" , "<<", default_options)
 vim.keymap.set("v", "<Tab>"   , ">",  default_options)
 vim.keymap.set("v", "<S-Tab>" , "<",  default_options)
+
+-- Go to symbol definition
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, default_options)
